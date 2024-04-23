@@ -3,7 +3,8 @@
 PWD=$(pwd)
 #LOG="/mnt/us/clock.log"
 LOG="/dev/null"
-FBINK="/mnt/us/extensions/MRInstaller/bin/K5/fbink -q"
+FBINK="/mnt/us/extensions/fbink/K5/bin/fbink -q"
+# downloaded from https://www.mobileread.com/forums/showthread.php?t=299620
 FONT="regular=/usr/java/lib/fonts/Palatino-Regular.ttf"
 #FONT="regular=/usr/java/lib/fonts/Caecilia_LT_75_Bold.ttf"
 CITY="Hamburg"
