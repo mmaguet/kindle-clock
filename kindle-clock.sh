@@ -12,10 +12,10 @@ TEMP="---"
 
 ### uncomment/adjust according to your hardware
 #K4NT
-#FBROTATE=" echo 14 2 > /proc/eink_fb/update_display"
-#BACKLIGHT="/dev/null"
-#BATTERY="/sys/devices/system/yoshi_battery/yoshi_battery0/battery_capacity"
-#TEMP_SENSOR="/sys/devices/virtual/i2c-adapter/i2c-1/1-0048/papyrus_temperature"
+FBROTATE=" echo 14 2 > /proc/eink_fb/update_display"
+BACKLIGHT="/dev/null"
+BATTERY="/sys/devices/system/yoshi_battery/yoshi_battery0/battery_capacity"
+TEMP_SENSOR="/sys/devices/virtual/i2c-adapter/i2c-1/1-0048/papyrus_temperature"
 
 #PW3
 #FBROTATE="echo 0 > /sys/devices/platform/imx_epdc_fb/graphics/fb0/rotate"
@@ -24,10 +24,10 @@ TEMP="---"
 #TEMP_SENSOR="/sys/devices/virtual/i2c-adapter/i2c-1/1-0068/papyrus_temperature"
 
 #PW2
-FBROTATE="echo -n 0 > /sys/devices/platform/mxc_epdc_fb/graphics/fb0/rotate"
-BACKLIGHT="/sys/devices/system/fl_tps6116x/fl_tps6116x0/fl_intensity"
-BATTERY="/sys/devices/system/yoshi_battery/yoshi_battery0/battery_capacity"
-TEMP_SENSOR="/sys/devices/virtual/i2c-adapter/i2c-1/1-0068/papyrus_temperature"
+#FBROTATE="echo -n 0 > /sys/devices/platform/mxc_epdc_fb/graphics/fb0/rotate"
+#BACKLIGHT="/sys/devices/system/fl_tps6116x/fl_tps6116x0/fl_intensity"
+#BATTERY="/sys/devices/system/yoshi_battery/yoshi_battery0/battery_capacity"
+#TEMP_SENSOR="/sys/devices/virtual/i2c-adapter/i2c-1/1-0068/papyrus_temperature"
 
 wait_for_wifi() {
   return `lipc-get-prop com.lab126.wifid cmState | grep -e "CONNECTED" | wc -l`
